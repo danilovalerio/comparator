@@ -13,6 +13,7 @@ public class MyComparator implements Comparator<Produto> {
 		//se p1 < p2 retorna -1
 		
 		//compara os produtos por nome independente de letras maisc/minusc.
+		//Uma das formas de se implementar o Comparator
 		return p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase());
 	}
 	
